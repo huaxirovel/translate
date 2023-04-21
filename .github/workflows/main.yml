@@ -28,6 +28,10 @@ jobs:
           git_repo_url: https://github.com/dair-ai/Prompt-Engineering-Guide
           api_key: ${{ secrets.OPENAI_API_KEY }}
           file_types: "txt"
+          source_language: "Chinese"
+          target_language: "English"
+          i18n_surfix: "/EN/"
+          file_path_filter: "/CN/*.txt"
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
